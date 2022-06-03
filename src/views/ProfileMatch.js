@@ -21,7 +21,7 @@ function MatchProfile() {
           <Col md="8">
             <Card>
               <Card.Header>
-                <Card.Title as="h4">Edit Profile</Card.Title>
+                <Card.Title as="h4">Edit Match Profile</Card.Title>
               </Card.Header>
               <Card.Body>
                 <Form>
