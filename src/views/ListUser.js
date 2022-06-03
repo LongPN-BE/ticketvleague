@@ -35,7 +35,6 @@ function TableList() {
                       <th className="border-0">First name</th>
                       <th className="border-0">Last name</th>
                       <th className="border-0">Phone</th>
-
                     </tr>
                   </thead>
                   <tbody>

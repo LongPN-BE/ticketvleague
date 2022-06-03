@@ -45,21 +45,39 @@ function Typography() {
 
               </Card.Header>
               <Card.Body>
-                <div className="typography-line">
-                  <h1>
-                    <span>Header 1</span>
-                    The Life of Light Bootstrap Dashboard React
-                  </h1>
+
+                <div class="typo-line">
+                  <p class="category">
+                    Time:
+                    <hr></hr>
+                    Day: 31/05/2022
+                  </p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3>Ho Chi Minh Club VS Ha Noi Club</h3>
+                      <blockquote>
+                        <p>Thong Nhat Stadium</p>
+                      </blockquote>
+                    </div>
+                    <div class="col-md-6">
+                      <h3>Luong ve</h3>
+                      <blockquote>
+                        <p>200/<cite card-title="Source card-title"> 500</cite>
+                          <i className="nc-icon nc-align-center" style={{ marginLeft: "200px", color: "black", fontSize: "20px"}}>View detail</i>
+                        </p>
+                      </blockquote>
+                    </div>
+
+                  </div>
                 </div>
-                <div className="typography-line">
-                  <h2>
-                    <span>Header 2</span>
-                    The Life of Light Bootstrap Dashboard React
-                  </h2>
-                </div>
+
+
+
+
+
                 <div className="typography-line">
                   <h3>
-                    <span style={{ fontSize: "20px" , fontFamily:"Arial, Helvetica, sans-seri"}}>
+                    <span style={{ fontSize: "20px", fontFamily: "Arial, Helvetica, sans-seri" }}>
                       Time:
                       <br></br>
                       <br></br>
@@ -87,13 +105,12 @@ function Typography() {
                   </h6>
                 </div>
                 <div className="typography-line">
-                  <p>
-                    <span>Paragraph</span>I will be the leader of a company that
-                    ends up being worth billions of dollars, because I got the
-                    answers. I understand culture. I am the nucleus. I think
-                    that’s a responsibility that I have, to push possibilities,
-                    to show people, this is the level that things could be at.
-                  </p>
+                  <blockquote>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+                    </p>
+                    <small>Steve Jobs, CEO Apple</small>
+                  </blockquote>
                 </div>
                 <div className="typography-line">
                   <span>Quote</span>
@@ -158,6 +175,26 @@ function Typography() {
                     Header with small subtitle <br></br>
 
                   </h2>
+                </div>
+
+                <div class="typo-line">
+                  <p class="category">Blockquotes</p>
+                  <div class="row"><div class="col-md-6">
+                    <h5>Default Blockquote</h5>
+                    <blockquote>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </blockquote></div>
+                    <div class="col-md-6">
+                      <h5>Blockquote with Citation</h5>
+                      <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <small>Someone famous in
+                          <cite card-title="Source card-title"> Source card-title
+                          </cite>
+                        </small>
+                      </blockquote>
+                    </div>
+                  </div>
                 </div>
               </Card.Body>
             </Card>

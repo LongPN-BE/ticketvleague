@@ -5,24 +5,28 @@ import MangagerCLB from "views/MangagerCLB.js";
 import Match from "views/Match.js";
 import ListUser from "views/ListUser.js";
 import Maps from "views/Maps.js";
+import Login from "views/Login.js";
 import Notifications from "views/Notifications.js";
+
 
 
 const dashboardRoutes = [
   {
     path: "/home",
     name: "Home",
-    icon: "nc-icon nc-chart-pie-35",
+    icon: "nc-icon nc-grid-45",
     component: Home,
     layout: "/admin",
   },
+
   {
     path: "/profile",
     name: "Profile",
-    icon: "nc-icon nc-circle-09",
+    icon: "nc-icon nc-badge",
     component: Profile,
     layout: "/admin",
   },
+
   {
     path: "/MangagerClub",
     name: "Club List",
@@ -37,17 +41,18 @@ const dashboardRoutes = [
     component: Match,
     layout: "/admin",
   },
+
   {
     path: "/ListUser",
     name: "List User",
-    icon: "nc-icon nc-atom",
+    icon: "nc-icon nc-bullet-list-67",
     component: ListUser,
     layout: "/admin",
   },
   {
     path: "/maps",
     name: "Stadium",
-    icon: "nc-icon nc-pin-3",
+    icon: "nc-icon nc-single-02",
     component: Maps,
     layout: "/admin",
   },
@@ -56,6 +61,14 @@ const dashboardRoutes = [
     name: "Notifications",
     icon: "nc-icon nc-bell-55",
     component: Notifications,
+    layout: "/admin",
+  },
+
+  {
+    path: "/Login",
+    name: "Login",
+    icon: "nc-icon nc-circle-09",
+    component: Login,
     layout: "/admin",
   },
 ];
