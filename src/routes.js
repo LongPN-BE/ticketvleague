@@ -7,6 +7,8 @@ import ListUser from "views/ListUser.js";
 import Maps from "views/Maps.js";
 import Login from "views/Login.js";
 import Notifications from "views/Notifications.js";
+import MatchProfile from "views/ProfileMatch.js";
+import ClubProfile from "views/ClubProfile.js";
 
 
 
@@ -35,10 +37,24 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
+    path: "/ClubProfile",
+    name: "Club Profile",
+    icon: "nc-icon nc-badge",
+    component: ClubProfile,
+    layout: "/admin",
+  },
+  {
     path: "/Match",
     name: "MATCH SCHEDULE",
     icon: "nc-icon nc-paper-2",
     component: Match,
+    layout: "/admin",
+  },
+  {
+    path: "/MatchProfile",
+    name: "Match Profile",
+    icon: "nc-icon nc-badge",
+    component: MatchProfile,
     layout: "/admin",
   },
 

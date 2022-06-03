@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { useLocation } from "react-router-dom";
 import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
-import login from"views/Login.js";
+import login from"views/LoginPage.js";
 import routes from "routes.js";
 
 function Header() {
@@ -56,7 +56,7 @@ function Header() {
             <Nav.Item>
               <Nav.Link
                 className="m-0"
-                href="login"
+                href="LoginPage.js"
                 // onClick={(e) => e.preventDefault()}
               >
                 <span className="no-icon">
