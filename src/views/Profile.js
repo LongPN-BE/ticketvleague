@@ -43,7 +43,7 @@ function User() {
                         <Form.Control
                           defaultValue="*******"
                           placeholder="Username"
-                          type="text"
+                          type="password"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
@@ -83,7 +83,7 @@ function User() {
                       </Form.Group>
                     </Col>
                   </Row>
-                  
+
                   <Row>
                     <Col md="12">
                       <Form.Group>

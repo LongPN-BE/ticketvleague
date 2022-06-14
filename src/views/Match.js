@@ -19,8 +19,6 @@ function Typography() {
   return (
     <>
       <Container fluid>
-
-
         <Row>
           <Col md="12">
             <Card>
@@ -31,12 +29,12 @@ function Typography() {
                 </h3>
 
                 <p className="text-danger" style={{ fontSize: "20px" }}>
-                  <a href="#" style={{ marginLeft: "1175px", color: "black" }}>
-                    Add new <i className="nc-icon nc-simple-add" style={{ marginLeft: "1200px", color: "black", fontSize: "30px" }}></i>
+                  <a href="#" style={{ color: "black" }}>
+                    Add new
                   </a>
                 </p>
                 <form>
-                  <select style={{ fontSize: "20px" }}>
+                  <select style={{ fontSize: "20px", borderStyle: "hidden", borderWidth: "5px" }}>
                     <option value="Ford">Vong 1</option>
                     <option value="Volvo">Vong 2</option>
                     <option value="Fiat">Vong 3</option>
@@ -49,12 +47,13 @@ function Typography() {
                 <div class="typo-line">
                   <p class="category">
                     Time:
-                    <hr></hr>
+                    <hr/>
                     Day: 31/05/2022
                   </p>
                   <div class="row">
                     <div class="col-md-6">
                       <h3>Ho Chi Minh Club VS Ha Noi Club</h3>
+                      <hr></hr>
                       <blockquote>
                         <p>Thong Nhat Stadium</p>
                       </blockquote>
@@ -63,24 +62,19 @@ function Typography() {
                       <h3>Luong ve</h3>
                       <blockquote>
                         <p>200/<cite card-title="Source card-title"> 500</cite>
-                          <i className="nc-icon nc-align-center" style={{ marginLeft: "200px", color: "black", fontSize: "20px"}}>View detail</i>
+                          <i className="nc-icon nc-align-center" style={{ marginLeft: "200px", color: "black", fontSize: "20px" }}>View detail</i>
                         </p>
                       </blockquote>
                     </div>
 
                   </div>
                 </div>
-
-
-
-
-
                 <div className="typography-line">
                   <h3>
                     <span style={{ fontSize: "20px", fontFamily: "Arial, Helvetica, sans-seri" }}>
                       Time:
                       <br></br>
-                      <br></br>
+                      <hr />
                       Day: 31/05/2022
                     </span>
                     Ho Chi Minh Club VS Ha Noi Club

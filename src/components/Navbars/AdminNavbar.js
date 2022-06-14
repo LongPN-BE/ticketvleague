@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { useLocation } from "react-router-dom";
 import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
-import login from"views/LoginPage.js";
+import login from "views/Login.js";
+
 import routes from "routes.js";
 
 function Header() {
@@ -30,7 +31,7 @@ function Header() {
     <Navbar bg="light" expand="lg">
       <Container fluid>
         <div className="d-flex justify-content-center align-items-center ml-2 ml-lg-0">
-          
+
           <Navbar.Brand className="mr-2">{getBrandText()}</Navbar.Brand>
         </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="mr-2">
@@ -47,31 +48,21 @@ function Header() {
                 onClick={(e) => e.preventDefault()}
                 className="m-0"
               >
-                
               </Nav.Link>
             </Nav.Item>
-            
+
           </Nav>
           <Nav className="ml-auto" navbar>
-            <Nav.Item>
-              <Nav.Link
-                className="m-0"
-                href="LoginPage.js"
-                // onClick={(e) => e.preventDefault()}
-              >
-                <span className="no-icon">
-                  <a></a>Log in</span>
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                className="m-0"
-                href="#"
-              >
-                <span className="no-icon">Register</span>
-              </Nav.Link>
-            </Nav.Item>
+
+            <a href="login" style={{ marginTop: "10%", marginRight: "20%"}}>
+              Login
+            </a>
+
+            <a href="views/register" style={{ marginTop: "10%", marginRight: "20%" }}>
+              Register
+            </a>
           </Nav>
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>

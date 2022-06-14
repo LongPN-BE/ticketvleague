@@ -4,11 +4,14 @@ import Profile from "views/Profile.js";
 import MangagerCLB from "views/MangagerCLB.js";
 import Match from "views/Match.js";
 import ListUser from "views/ListUser.js";
-import Maps from "views/Maps.js";
+
 import Login from "views/Login.js";
 import Notifications from "views/Notifications.js";
 import MatchProfile from "views/ProfileMatch.js";
 import ClubProfile from "views/ClubProfile.js";
+import Ticket from "views/Ticket.js";
+import Register from "views/Register.js";
+
 
 
 
@@ -19,6 +22,7 @@ const dashboardRoutes = [
     icon: "nc-icon nc-grid-45",
     component: Home,
     layout: "/admin",
+    
   },
 
   {
@@ -30,26 +34,13 @@ const dashboardRoutes = [
   },
 
   {
-    path: "/MangagerClub",
-    name: "Club List",
-    icon: "nc-icon nc-notes",
-    component: MangagerCLB,
-    layout: "/admin",
-  },
-  {
-    path: "/ClubProfile",
-    name: "Club Profile",
-    icon: "nc-icon nc-badge",
-    component: ClubProfile,
-    layout: "/admin",
-  },
-  {
     path: "/Match",
     name: "MATCH SCHEDULE",
     icon: "nc-icon nc-paper-2",
     component: Match,
     layout: "/admin",
   },
+
   {
     path: "/MatchProfile",
     name: "Match Profile",
@@ -59,19 +50,41 @@ const dashboardRoutes = [
   },
 
   {
+    path: "/Ticket",
+    name: "Ticket",
+    icon: "nc-icon nc-align-center",
+    component: Ticket,
+    layout: "/admin",
+  },
+
+  
+
+  {
+    path: "/MangagerClub",
+    name: "Club List",
+    icon: "nc-icon nc-notes",
+    component: MangagerCLB,
+    layout: "/admin",
+    
+  },
+  {
+    path: "/ClubProfile",
+    name: "Club Profile",
+    icon: "nc-icon nc-badge",
+    component: ClubProfile,
+    layout: "/admin",
+  },
+  
+ 
+
+  {
     path: "/ListUser",
     name: "List User",
     icon: "nc-icon nc-bullet-list-67",
     component: ListUser,
     layout: "/admin",
   },
-  {
-    path: "/maps",
-    name: "Stadium",
-    icon: "nc-icon nc-single-02",
-    component: Maps,
-    layout: "/admin",
-  },
+
   {
     path: "/notifications",
     name: "Notifications",
@@ -85,6 +98,14 @@ const dashboardRoutes = [
     name: "Login",
     icon: "nc-icon nc-circle-09",
     component: Login,
+    layout: "/admin",
+  },
+
+  {
+    path: "/Register",
+    name: "Register",
+    icon: "nc-icon nc-circle-09",
+    component: Register,
     layout: "/admin",
   },
 ];

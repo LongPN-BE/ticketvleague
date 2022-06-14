@@ -29,12 +29,14 @@ function MatchProfile() {
                     <Col className="pr-1" md="5">
                       <Form.Group>
                         <label>Vòng Đấu</label>
-                        <select name="rounds" id="rounds">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                        </select>
+                        <br></br>
+                        <form>
+                          <select style={{ fontSize: "20px", borderStyle: "hidden", borderWidth: "5px", margin:"10px 0px" }}>
+                            <option value="Ford">Vong 1</option>
+                            <option value="Volvo">Vong 2</option>
+                            <option value="Fiat">Vong 3</option>
+                          </select>
+                        </form>
                       </Form.Group>
                     </Col>
                     <Col className="px-1" md="3">
@@ -43,7 +45,7 @@ function MatchProfile() {
                         <Form.Control
                           defaultValue="3 Jun 2022, 02:02:36"
                           placeholder="Start time"
-                          type="text"
+                          type="date"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
@@ -53,7 +55,7 @@ function MatchProfile() {
                         <Form.Control
                           defaultValue="3 Jun 2022, 02:02:36"
                           placeholder="End time"
-                          type="text"
+                          type="date"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
@@ -70,7 +72,7 @@ function MatchProfile() {
                       </Form.Group>
                     </Col>
                     <Col>
-                      -
+
                     </Col>
                     <Col className="pl-1" md="5">
                       <Form.Group>
@@ -107,9 +109,9 @@ function MatchProfile() {
                       </Form.Group>
                     </Col>
                     <Col md="6">
-                      Active 
+                      Active
                       <Form.Control
-                      type="checkbox"></Form.Control>
+                        type="checkbox"></Form.Control>
                     </Col>
                   </Row>
 

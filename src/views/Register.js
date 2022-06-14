@@ -1,13 +1,12 @@
 import '../assets/css/login.css'
 import background from "assets/img/backgroundLogin.png"
-import Register from "views/Register"
+import login from "views/Login"
 import Home from "views/Home"
 
-
-function Login() {
-  return (
-    <>
-      <div className="container">
+function Regiater() {
+    return (
+      <>
+        <div className="container">
         <div className='navbar'>
           <div>
             <a href='#'>
@@ -17,7 +16,7 @@ function Login() {
           <nav>
             <ul id="Item">
               <li><a href="Home">Home</a></li>
-              <li><a href="Register">Register</a></li>
+              <li><a href="login">Login</a></li>
             </ul>
           </nav>
         </div>
@@ -31,29 +30,25 @@ function Login() {
                 style={{ width: "100%" }}
               />
             </div>
-
             <div className='col-2'>
               <div className='form-container'>
                 <div className='form-btn'>
-                  <span >Login</span>
+                  <span >Register</span>
                   <hr id='Indicator' />
-                </div>                
-                <form id="LoginForm">
+                </div>
+                <form id="RegForm">
                   <input type={'text'} name={''} placeholder={'Username or email'} />
                   <input type={'password'} name={''} placeholder={'Password'} />
-                  <button type={'submit'} class='btn' name={''}>Login</button>
-                  <a href='#'>
-                    <img src='http://www.testyou.in/sign-in-with-google.png' >
-                    </img>
-                  </a>
+                  <input type={'text'} name={''} placeholder={'Phone'} />
+                  <button type={'submit'} class='btn' name={''}>Register</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
-  )
-};
-
-export default Login;
+      </>
+    )
+  };
+  
+  export default Regiater;
